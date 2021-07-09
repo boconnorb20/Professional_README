@@ -72,8 +72,8 @@ function writeToFile(fileName, data) {
 function init() {
         // begins questions 
         inquirer.prompt(questions)
-        // writes file READMEGenerated.md using data from generateMarkdown
-        .then((data) => writeToFile('READMEGenerated.md', generateMarkdown(data)))
+        // writes file README.md using data from generateMarkdown
+        .then((data) => writeToFile('README.md', generateMarkdown(data)))
         // once printed with no erros a succesful command is displayed
         .then(() => console.log("README successfully written."))
         .catch((err) => console.log(err))
